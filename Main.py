@@ -6,7 +6,7 @@ num= int(input("Enter The number of usernames ? :"))
 discord= "https://discordapp.com/api/webhooks/1121345141966381056/CtuF92VkTLXgIGm4rKcTN2j6hXn7fw6Bi8ruqOpnc55SkiqPpGeZxx41JFIchL31jQOa"
 gif = "https://i.pinimg.com/originals/c2/32/7f/c2327f218eb515211a15bd513fe4265f.gif"
 
-fuser= "jpno"
+
 while True:
     chars="qw_ertyuiopa.123456789.0sdfghjkl_z.xc_vbn_mqwer.t_yuiopasd0123466.559856_fghjkl.zxcvbnmqwert000.yuio_pasdf.ghjklzxc.vbnmqw.ertyuiopasd_fghj.klzx.cvbnmqwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm12345678901234567890.";user=""
     for user in range(1):
