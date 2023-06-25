@@ -1,6 +1,7 @@
 import requests,random
 from requests import get,post
 
+Token= str(input("Please Enter Token : "))
 num= int(input("Enter The number of usernames ? :"))
 discord= "https://discordapp.com/api/webhooks/1121345141966381056/CtuF92VkTLXgIGm4rKcTN2j6hXn7fw6Bi8ruqOpnc55SkiqPpGeZxx41JFIchL31jQOa"
 gif = "https://i.pinimg.com/originals/c2/32/7f/c2327f218eb515211a15bd513fe4265f.gif"
@@ -18,7 +19,7 @@ while True:
             "Accept":"*/*",
             "Accept-Encoding":"gzip, deflate, br",
             "Accept-Language":"en-US,en;q=0.9,ar;q=0.8",
-            "Authorization":"OTA1MDY1NTMxMjg2MTA2MTMz.GeceID.HMSYVFYUvO7LDJeECvwML2_oFeMh_siA8IvpR4",
+            "Authorization":f"{Token}",
             "Content-Length":"20",
             "Content-Type":"application/json",
             "Cookie":"__dcfduid=cf576c80336511ed920e3f458d8db9d4; __sdcfduid=cf576c81336511ed920e3f458d8db9d445af67e5e809f3f17ebcad3cf9d3d3295abc987db2fd05b8c5acae99c5a09236; __cfruid=1e59b0d1a6360972d9c60b3f2fb4360a1447d790-1687415491; __cf_bm=7w8LP6W7baOkDGyEdDgjnk_9LwQ8cPYJMTWOBERjdPo-1687415499-0-Ae7ISf9drWNcKJClysmuojhko0SXhI3O/mWPiu/UoKZdbP977boAVUDAmmvL5b0hrA==",
@@ -45,3 +46,4 @@ while True:
             data = {}
             data["embeds"] = [{"description": f"\n • New username’s Claimed : @{user}","color": random.choice([0x8f12e3,0x6e09b3]),"thumbnail": {"url": gif},"author": {"name": "Discord ."}}]
             post(url=discord, json=data)
+        else:print(req.text)
